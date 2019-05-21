@@ -47,7 +47,7 @@
         padding: 25px 0;
         margin: 0 auto;
         .assignment{
-            width: 90%;
+            width: 97%;
             margin-right: 20px;
             background-color: #ece493;
             padding: 20px 0;
@@ -56,6 +56,11 @@
             margin: 10px 0;
             font-size: 15px;
             color: $color-darkTitle;
+            font-weight: bold;
+            padding-left: 20px;
+        }
+        .btns{
+            background-image: url("")
         }
         p{
             text-align: center;
