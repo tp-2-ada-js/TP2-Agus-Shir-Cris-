@@ -20,20 +20,24 @@ time, mark, audio, video {
   list-style: none;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
-  width: 100%;
   font-family: "Muli", sans-serif;
   background-image: url("../imagen/tags2.jpg");
 }
 body .totalContent {
   background-color: rgba(236, 228, 147, 0.7);
   height: 100%;
+  padding-top: 20px;
 }
 body header {
   width: 90%;
   height: 300px;
   background-color: #7fa99b;
-  margin: 10px auto 40px auto;
+  margin: 0px auto 40px auto;
   border-radius: 50px;
   justify-content: space-between;
   border: 1px solid #103c42;
@@ -63,11 +67,11 @@ body header .title {
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin: 30px auto;
+  margin: 30px 10px;
 }
 body header .title h1 {
   color: #292830;
-  font-size: 120px;
+  font-size: 110px;
   font-family: "Baloo Bhaijaan", cursive;
   text-align: center;
   margin-bottom: 20px;
@@ -148,7 +152,11 @@ body .taskBox .hiddenTask {
   margin: 0 auto;
 }
 body .taskBox .hiddenTask .assignment {
+<<<<<<< HEAD
   width: 90%;
+=======
+  width: 97%;
+>>>>>>> 1c14df43e701d57200154709abe16479b592b53d
   margin-right: 20px;
   background-color: #ece493;
   padding: 20px 0;
@@ -157,6 +165,11 @@ body .taskBox .hiddenTask .assignment {
   margin: 10px 0;
   font-size: 15px;
   color: #292830;
+  font-weight: bold;
+  padding-left: 20px;
+}
+body .taskBox .hiddenTask .btns {
+  background-image: url("");
 }
 body .taskBox .hiddenTask p {
   text-align: center;

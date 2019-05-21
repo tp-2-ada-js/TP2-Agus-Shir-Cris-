@@ -41,13 +41,17 @@ $color-textHeader: #103c42;
     margin-top: 20px;
 }
 
+html, body{
+    height: 100%;
+}
+
 body{
-    width: 100%;
     font-family: $font;
     background-image: url("../imagen/tags2.jpg");
     .totalContent{
         background-color: transparentize(#ece493, 0.3);
         height: 100%;
+        padding-top: 20px;
     }
     
     @import "secciones/header";

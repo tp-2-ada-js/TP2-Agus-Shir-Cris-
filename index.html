@@ -11,6 +11,7 @@
     <title>To-do-list</title>
 </head>
 <body onload="printTask()">
+<<<<<<< HEAD
     <div class="comment"> 
         
         <input id="commentInput" type="text" value= "" placeholder="Ingrese una tarea..."
@@ -30,6 +31,50 @@
         <ul id="doneTaskList">
             <li></li>
         </ul>
+=======
+    <div class="totalContent">
+        <header>
+            <div class="leftTicket">
+                <i class="fas fa-plane-departure"></i>
+                <p>SAC</p>
+            </div>
+            <div class="title">
+                <h1>BOARDING PASS</h1>
+                <p class="subtitle">Lugares del mundo <br> que hay que conocer antes de morir</p>
+            </div>
+            <div class="rightTicket">
+                <i class="fas fa-plane-arrival"></i>
+                <p>ADA</p>
+            </div>
+
+        </header>
+        <section class="taskBox">
+            <div class="comment"> 
+                <input id="commentInput" type="text" value= "" placeholder="Mi proximo viaje sera a..."
+                onkeypress="enterKeyPress(event)">
+                <button type="button"
+                onclick="sendTask()"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="hiddenTask">
+                <p>¡No hay destinos pendientes!</p>
+                <ul id="taskList">
+                    <li></li>
+                </ul>
+            </div>
+            <div class="line"></div>
+            <div class="hiddenTask">
+                <p>Todavia no visitaste ningun lugar</p>
+                <ul id="doneTaskList">
+                    <li></li>
+                </ul>
+            </div>
+            <footer>
+                <ul>
+                    <li><a href=""></a></li>
+                </ul>
+            </footer>
+        </section>
+>>>>>>> 1c14df43e701d57200154709abe16479b592b53d
     </div>
     <footer>
         <ul class="footer">
