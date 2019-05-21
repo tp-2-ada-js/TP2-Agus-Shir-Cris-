@@ -4,8 +4,7 @@ var taskList
 
 
 allTask = [
-    {text:"", pending:true},
-    {text:"", pending:true}
+    
 ]
 
 var enterKeyPress = function(event){
@@ -17,13 +16,22 @@ var enterKeyPress = function(event){
 var printTask = function(){
     taskList = document.getElementById("taskList")
     taskList.innerHTML = ""
-    allTask.map(function(assignment){
+    doneTaskList = document.getElementById('doneTaskList')
+    doneTaskList.innerHTML = ''
+    allTask.map(function(assignment, index){
         var taskItem = document.createElement("li")
-        taskItem.classList.add("liTask")
+        taskItem.classList.add("assignment")
         taskItem.innerText = assignment.text
-        taskList.appendChild(taskItem)
+        taskItem.appendChild(createBtn('toggle', index, toggleItem))
+        taskItem.appendChild(createBtn('delete', index, deleteItem))
+        if(assignment.pending){
+            taskList.appendChild(taskItem)
+          } else {
+            doneTaskList.appendChild(taskItem)
+          }
     })
 }
+
 
 var sendTask = function(){
     task = document.getElementById('commentInput');
@@ -39,3 +47,23 @@ var sendTask = function(){
     printTask()
     }
 }
+
+var createBtn = function(text, itemId, btnFuction){
+    var btn = document.createElement('button')
+    btn.innerText = text
+    btn.id = itemId
+    btn.onclick = function(){ btnFuction(this) }
+    return btn
+  }
+
+  var toggleItem = function(btn){
+    console.log(btn.id)
+    allTask[btn.id].pending = !allTask[btn.id].pending
+    printTask()
+  }
+
+  var deleteItem = function(btn){
+    // splice elimina del array al elemento especificado por su indice.
+    allTask.splice(btn.id, 1)
+    printTask()
+  }
