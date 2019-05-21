@@ -14,75 +14,46 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+    font: inherit;
+    font-size: 100%;
     vertical-align: baseline;
     list-style: none;
 }
+	
 
 //Variables
 $font: 'Muli', sans-serif;
+$colorInput: #fff;
+$colorBack: #085f63;
+$color-darkTitle: #292830;
+$color-textHeader: #103c42;
 
-$font-colorInput: #fff;
-$font-colorTask: #000;
-$font-colorBack: #999;
+@mixin plane {
+    color: $color-textHeader;
+    font-size: 50px;
+    margin-top: 80px;
+}
 
-$container: 98%;
-
+@mixin code {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 60px;
+    color: $color-textHeader;
+    margin-top: 20px;
+}
 
 body{
     width: 100%;
     font-family: $font;
-    color: #edf0f1;
-    .comment{
-        width: $container;
-        margin: 0 auto;
-        background-color: #BC3B69;
-        padding: 10px;
-        border-radius: 10px;
-        justify-content: center;
-        input{
-            width: 98%;
-            height: 60px;
-            margin: 0 auto;
-            background-color: #CF829E;
-            font-family: $font;
-            border: none;
-            border-radius: 5px;
-            font-size: 15px;
-            text-indent: 15px;
-            &::placeholder{
-                color: $font-colorInput;
-            }
-        }
-        button{
-            width: 60px;
-            height: 60px;
-            position: absolute;
-            top: 11px;
-            right: 16px;
-            z-index: 2;
-            border-radius: 30px;
-            background: $font-colorInput;
-            border: none;            
-        }
-    }
-    .hiddenTask{
-        width: $container;
-        padding: 25px 0;
-        margin: 0;
-        p{
-            text-align: center;
-            color: $font-colorBack;
-        }  
-    } 
-    .line{
-        border-bottom: 1px solid #d8e5e0;
-        width: $container;
-        margin: 0 auto;
-    }  
-      
+    background-color: #facf5a;
+
+    @import "secciones/header";
+    @import "secciones/input";
+    
 }
+            
+
+        
+      
             
 
             

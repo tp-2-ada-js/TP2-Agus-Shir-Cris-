@@ -1,0 +1,65 @@
+
+.taskBox{
+    border: solid 2px $colorBack;
+    background-color: #7fa99b;
+    border-radius: 25px;
+    padding: 20px;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    .comment{
+        margin: 0 auto;
+        background-color: $colorBack;
+        padding: 10px;
+        border-radius: 10px;
+        justify-content: center;
+        input{
+            width: 98%;
+            height: 60px;
+            margin: 0 auto;
+            color: $colorInput;
+            background-color: $color-darkTitle;
+            font-family: $font;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            font-size: 15px;
+            text-indent: 15px;
+            &::placeholder{
+                color: $colorInput;
+            }
+        }
+        button{
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 30px;
+            right: 35px;
+            z-index: 2;
+            border-radius: 30px;
+            background: $colorInput;
+            border: none;            
+        }
+    }
+    .hiddenTask{
+        padding: 25px 0;
+        margin: 0 auto;
+        p{
+            text-align: center;
+            color: $colorBack;
+            font-size: 18px;
+            font-weight: bold;
+        }  
+    } 
+    .line{
+        border-bottom: 1px solid $colorBack;
+        margin: 0 auto;
+    }  
+}
+              
+        
+        
+        
+        

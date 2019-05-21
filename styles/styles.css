@@ -14,8 +14,8 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
   list-style: none;
 }
@@ -23,53 +23,134 @@ time, mark, audio, video {
 body {
   width: 100%;
   font-family: "Muli", sans-serif;
-  color: #edf0f1;
+  background-color: #facf5a;
 }
-body .comment {
-  width: 98%;
+body header {
+  width: 90%;
+  height: 300px;
+  background-color: #7fa99b;
+  margin: 40px auto;
+  border-radius: 50px;
+  justify-content: space-between;
+  border: 1px solid #103c42;
+}
+body header .leftTicket {
+  width: 13%;
+  height: 100%;
+  border-right: 4px dotted #103c42;
+  float: left;
+  text-align: center;
+}
+body header .leftTicket i {
+  color: #103c42;
+  font-size: 50px;
+  margin-top: 80px;
+}
+body header .leftTicket p {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 60px;
+  color: #103c42;
+  margin-top: 20px;
+}
+body header .title {
+  width: 70%;
+  line-height: 80px;
+  float: left;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+}
+body header .title h1 {
+  color: #292830;
+  font-size: 120px;
+  font-family: "Baloo Bhaijaan", cursive;
+  text-align: center;
+  margin-bottom: 20px;
+}
+body header .title .subtitle {
+  font-size: 30px;
+  font-family: "Baloo Bhaijaan", cursive;
+  line-height: 40px;
+  color: #292830;
+}
+body header .rightTicket {
+  width: 13%;
+  height: 100%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-left: 4px dotted #103c42;
+}
+body header .rightTicket i {
+  color: #103c42;
+  font-size: 50px;
+  margin-top: 80px;
+}
+body header .rightTicket p {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 60px;
+  color: #103c42;
+  margin-top: 20px;
+}
+body .taskBox {
+  border: solid 2px #085f63;
+  background-color: #7fa99b;
+  border-radius: 25px;
+  padding: 20px;
+  position: relative;
+  width: 50%;
   margin: 0 auto;
-  background-color: #BC3B69;
+}
+body .taskBox .comment {
+  margin: 0 auto;
+  background-color: #085f63;
   padding: 10px;
   border-radius: 10px;
   justify-content: center;
 }
-body .comment input {
+body .taskBox .comment input {
   width: 98%;
   height: 60px;
   margin: 0 auto;
-  background-color: #CF829E;
+  color: #fff;
+  background-color: #292830;
   font-family: "Muli", sans-serif;
+  font-size: 18px;
   border: none;
   border-radius: 5px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
   font-size: 15px;
   text-indent: 15px;
 }
-body .comment input::placeholder {
+body .taskBox .comment input::placeholder {
   color: #fff;
 }
-body .comment button {
+body .taskBox .comment button {
   width: 60px;
   height: 60px;
   position: absolute;
-  top: 11px;
-  right: 16px;
+  top: 30px;
+  right: 35px;
   z-index: 2;
   border-radius: 30px;
   background: #fff;
   border: none;
 }
-body .hiddenTask {
-  width: 98%;
+body .taskBox .hiddenTask {
   padding: 25px 0;
-  margin: 0;
+  margin: 0 auto;
 }
-body .hiddenTask p {
+body .taskBox .hiddenTask p {
   text-align: center;
-  color: #999;
+  color: #085f63;
+  font-size: 18px;
+  font-weight: bold;
 }
-body .line {
-  border-bottom: 1px solid #d8e5e0;
-  width: 98%;
+body .taskBox .line {
+  border-bottom: 1px solid #085f63;
   margin: 0 auto;
 }
 
