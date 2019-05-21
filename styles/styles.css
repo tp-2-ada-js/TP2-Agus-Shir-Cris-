@@ -23,13 +23,17 @@ time, mark, audio, video {
 body {
   width: 100%;
   font-family: "Muli", sans-serif;
-  background-color: #facf5a;
+  background-image: url("../imagen/tags2.jpg");
+}
+body .totalContent {
+  background-color: rgba(236, 228, 147, 0.7);
+  height: 100%;
 }
 body header {
   width: 90%;
   height: 300px;
   background-color: #7fa99b;
-  margin: 40px auto;
+  margin: 10px auto 40px auto;
   border-radius: 50px;
   justify-content: space-between;
   border: 1px solid #103c42;

@@ -44,8 +44,12 @@ $color-textHeader: #103c42;
 body{
     width: 100%;
     font-family: $font;
-    background-color: #facf5a;
-
+    background-image: url("../imagen/tags2.jpg");
+    .totalContent{
+        background-color: transparentize(#ece493, 0.3);
+        height: 100%;
+    }
+    
     @import "secciones/header";
     @import "secciones/input";
     

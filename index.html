@@ -12,42 +12,49 @@
     <title>To-do-list</title>
 </head>
 <body onload="printTask()">
-    <header>
-        <div class="leftTicket">
-            <i class="fas fa-plane-departure"></i>
-            <p>SAC</p>
-        </div>
-        <div class="title">
-            <h1>BOARDING PASS</h1>
-            <p class="subtitle">Lugares del mundo que hay que conocer antes de morir</p>
-        </div>
-        <div class="rightTicket">
-            <i class="fas fa-plane-arrival"></i>
-            <p>ADA</p>
-        </div>
+    <div class="totalContent">
+        <header>
+            <div class="leftTicket">
+                <i class="fas fa-plane-departure"></i>
+                <p>SAC</p>
+            </div>
+            <div class="title">
+                <h1>BOARDING PASS</h1>
+                <p class="subtitle">Lugares del mundo que hay que conocer antes de morir</p>
+            </div>
+            <div class="rightTicket">
+                <i class="fas fa-plane-arrival"></i>
+                <p>ADA</p>
+            </div>
 
-    </header>
-    <section class="taskBox">
-        <div class="comment"> 
-            <input id="commentInput" type="text" value= "" placeholder="Mi proximo viaje sera a..."
-            onkeypress="enterKeyPress(event)">
-            <button type="button"
-            onclick="sendTask()"><i class="fas fa-plus"></i></button>
-        </div>
-        <div class="hiddenTask">
-            <p>¡No hay destinos pendientes!</p>
-            <ul id="taskList">
-                <li></li>
-            </ul>
-        </div>
-        <div class="line"></div>
-        <div class="hiddenTask">
-            <p>Todavia no visitaste ningun lugar</p>
-            <ul id="doneTaskList">
-                <li></li>
-            </ul>
-        </div>
-    </section>
+        </header>
+        <section class="taskBox">
+            <div class="comment"> 
+                <input id="commentInput" type="text" value= "" placeholder="Mi proximo viaje sera a..."
+                onkeypress="enterKeyPress(event)">
+                <button type="button"
+                onclick="sendTask()"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="hiddenTask">
+                <p>¡No hay destinos pendientes!</p>
+                <ul id="taskList">
+                    <li></li>
+                </ul>
+            </div>
+            <div class="line"></div>
+            <div class="hiddenTask">
+                <p>Todavia no visitaste ningun lugar</p>
+                <ul id="doneTaskList">
+                    <li></li>
+                </ul>
+            </div>
+            <footer>
+                <ul>
+                    <li></li>
+                </ul>
+            </footer>
+        </section>
+    </div>
 </body>
 </html>
     

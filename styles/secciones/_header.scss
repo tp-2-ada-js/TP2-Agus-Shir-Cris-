@@ -2,7 +2,7 @@ header{
     width: 90%;
     height: 300px;
     background-color: #7fa99b;
-    margin : 40px auto;
+    margin: 10px auto 40px auto;
     border-radius: 50px;
     justify-content: space-between;
     border: 1px solid $color-textHeader;
@@ -14,13 +14,11 @@ header{
         border-right: 4px dotted $color-textHeader;
         float: left;
         text-align: center;
-        
         i{
             @include plane 
         }
         p{
             @include code
-
         }
     }
     .title{
@@ -45,7 +43,6 @@ header{
             color: $color-darkTitle;
         }
     }
-
     .rightTicket{
         width: 13%;
         height: 100%;
