@@ -177,8 +177,17 @@ body .taskBox .line {
   border-bottom: 1px solid #085f63;
   margin: 0 auto;
 }
+body footer {
+  padding: 40px 0;
+  background-color: #085f63;
+}
+body footer ul {
+  display: flex;
+  justify-content: center;
+}
 body footer ul li a .logo {
   width: 45px;
+  padding: 8px 8px 8px 8px;
 }
 
 /*# sourceMappingURL=styles.css.map */
