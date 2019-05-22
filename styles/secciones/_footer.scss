@@ -1,0 +1,16 @@
+footer {
+    padding: 40px 0;
+    background-color: #085f63;
+    ul{
+        display: flex;
+        justify-content: center;
+        li{
+            a{
+                .logo{
+                    width: 45px; 
+                    padding: 8px 8px 8px 8px;
+                }
+            }
+        }
+    }
+}
