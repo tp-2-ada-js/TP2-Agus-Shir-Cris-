@@ -136,7 +136,7 @@ body .taskBox .comment input {
 body .taskBox .comment input::placeholder {
   color: #fff;
 }
-body .taskBox .comment button {
+body .taskBox .comment a {
   width: 60px;
   height: 60px;
   position: absolute;
@@ -146,6 +146,11 @@ body .taskBox .comment button {
   border-radius: 30px;
   background: #fff;
   border: none;
+}
+body .taskBox .comment a i.fas.fa-plus {
+  color: #292830;
+  font-size: 15px;
+  margin: 0 auto;
 }
 body .taskBox .hiddenTask {
   padding: 25px 0;
@@ -164,8 +169,11 @@ body .taskBox .hiddenTask .assignment {
   font-weight: bold;
   padding-left: 20px;
 }
-body .taskBox .hiddenTask .btns {
+body .taskBox .hiddenTask .remove {
   background-image: url("");
+}
+body .taskBox .hiddenTask .check {
+  height: 100%;
 }
 body .taskBox .hiddenTask p {
   text-align: center;

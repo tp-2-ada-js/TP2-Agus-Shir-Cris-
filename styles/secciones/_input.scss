@@ -31,7 +31,7 @@
                 color: $colorInput;
             }
         }
-        button{
+        a{
             width: 60px;
             height: 60px;
             position: absolute;
@@ -40,7 +40,14 @@
             z-index: 2;
             border-radius: 30px;
             background: $colorInput;
-            border: none;            
+            border: none; 
+            
+            i.fas.fa-plus{
+                color: $color-darkTitle;
+                font-size: 15px;
+                margin: 0 auto;
+                
+            }           
         }
     }
     .hiddenTask{
@@ -59,8 +66,12 @@
             font-weight: bold;
             padding-left: 20px;
         }
-        .btns{
+        .remove{
             background-image: url("")
+            
+        }
+        .check{
+            height: 100%;
         }
         p{
             text-align: center;
