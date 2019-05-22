@@ -152,11 +152,7 @@ body .taskBox .hiddenTask {
   margin: 0 auto;
 }
 body .taskBox .hiddenTask .assignment {
-<<<<<<< HEAD
-  width: 90%;
-=======
   width: 97%;
->>>>>>> 1c14df43e701d57200154709abe16479b592b53d
   margin-right: 20px;
   background-color: #ece493;
   padding: 20px 0;
@@ -180,6 +176,9 @@ body .taskBox .hiddenTask p {
 body .taskBox .line {
   border-bottom: 1px solid #085f63;
   margin: 0 auto;
+}
+body footer ul li a .logo {
+  width: 45px;
 }
 
 /*# sourceMappingURL=styles.css.map */
