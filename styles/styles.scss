@@ -23,6 +23,8 @@ time, mark, audio, video {
 
 //Variables
 $font: 'Muli', sans-serif;
+$headerFont: 'Raleway', sans-serif;
+
 $colorInput: #fff;
 $colorBack: #085f63;
 $color-darkTitle: #292830;
@@ -47,11 +49,10 @@ html, body{
 
 body{
     font-family: $font;
-    background-image: url("../imagen/tags2.jpg");
+    background-image: url("../image/tags2.jpg");
     .totalContent{
         background-color: transparentize(#ece493, 0.3);
-        height: 100%;
-        padding-top: 20px;
+        padding: 20px 0 5px 0;
     }
     
     @import "secciones/header";

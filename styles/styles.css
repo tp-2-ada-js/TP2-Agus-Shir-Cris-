@@ -26,12 +26,11 @@ html, body {
 
 body {
   font-family: "Muli", sans-serif;
-  background-image: url("../imagen/tags2.jpg");
+  background-image: url("../image/tags2.jpg");
 }
 body .totalContent {
   background-color: rgba(236, 228, 147, 0.7);
-  height: 100%;
-  padding-top: 20px;
+  padding: 20px 0 5px 0;
 }
 body header {
   width: 90%;
@@ -62,7 +61,7 @@ body header .leftTicket p {
 }
 body header .title {
   width: 70%;
-  line-height: 80px;
+  line-height: 90px;
   float: left;
   text-align: center;
   display: flex;
@@ -72,14 +71,15 @@ body header .title {
 body header .title h1 {
   color: #292830;
   font-size: 110px;
-  font-family: "Baloo Bhaijaan", cursive;
+  font-family: "Raleway", sans-serif;
   text-align: center;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 body header .title .subtitle {
   font-size: 30px;
-  font-family: "Baloo Bhaijaan", cursive;
-  line-height: 40px;
+  font-family: "Raleway", sans-serif;
+  line-height: 30px;
   color: #292830;
 }
 body header .rightTicket {
@@ -186,16 +186,36 @@ body .taskBox .line {
   margin: 0 auto;
 }
 body footer {
-  padding: 40px 0;
-  background-color: #085f63;
+  width: 70%;
+  margin: 50px auto 10px auto;
+  border: 1px solid #103c42;
+  border-radius: 10px;
+  padding: 15px 0 20px 0;
+  background-color: #7fa99b;
 }
 body footer ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  margin: 0 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px dotted #103c42;
+}
+body footer ul li {
+  margin: 0 auto;
+}
+body footer ul li a {
+  text-decoration: none;
 }
 body footer ul li a .logo {
-  width: 45px;
-  padding: 8px 8px 8px 8px;
+  width: 40px;
+  line-height: 60px;
+  padding: 2px;
+}
+body footer ul li a p {
+  font-family: "Raleway", sans-serif;
+  color: #292830;
+  font-size: 10px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=styles.css.map */

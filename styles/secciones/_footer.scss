@@ -1,16 +1,40 @@
 footer {
-    padding: 40px 0;
-    background-color: #085f63;
+    width: 70%;
+    margin: 50px auto 10px auto;
+    border: 1px solid $color-textHeader;
+    border-radius: 10px;
+    padding: 15px 0 20px 0;
+    background-color: #7fa99b;
     ul{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        margin: 0 30px;
+        padding-bottom: 20px;
+        border-bottom: 2px dotted $color-textHeader;
         li{
+            margin: 0 auto;
             a{
+                text-decoration: none;
                 .logo{
-                    width: 45px; 
-                    padding: 8px 8px 8px 8px;
+                    width: 40px;
+                    line-height: 60px;
+                    padding: 2px;
                 }
+                p{
+                    font-family: $headerFont;
+                    color: $color-darkTitle;
+                    font-size: 10px;
+                    font-weight: bold;
+                }
+                
             }
+            
         }
+        
     }
+    
+    
 }
+            
+                    
+                  
