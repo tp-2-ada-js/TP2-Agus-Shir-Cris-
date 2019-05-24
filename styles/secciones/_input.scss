@@ -7,6 +7,10 @@
     position: relative;
     width: 50%;
     margin: 0 auto;
+
+    @media screen and (min-width 450px){
+       width: 80%; 
+    }
     .comment{
         margin: 0 auto;
         background-color: $colorBack;
