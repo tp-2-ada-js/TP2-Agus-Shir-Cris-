@@ -147,10 +147,10 @@ body .taskBox .comment a {
   background: #fff;
   border: none;
 }
-body .taskBox .comment a i.fas.fa-plus {
+body .taskBox .comment a i {
   color: #292830;
-  font-size: 15px;
-  margin: 0 auto;
+  font-size: 25px;
+  margin: 19px;
 }
 body .taskBox .hiddenTask {
   padding: 25px 0;
@@ -170,16 +170,23 @@ body .taskBox .hiddenTask .assignment {
   padding-left: 20px;
 }
 body .taskBox .hiddenTask .remove {
-  background-image: url("");
+  background-color: #fff;
+  background-image: url("/image/trash-alt-regular.svg");
+  color: #292830;
 }
 body .taskBox .hiddenTask .check {
-  height: 100%;
+  background-image: url("/image/suitcase-rolling-solid (1).svg");
+  color: #292830;
 }
 body .taskBox .hiddenTask p {
+  display: block;
   text-align: center;
   color: #085f63;
   font-size: 18px;
   font-weight: bold;
+}
+body .taskBox .hiddenTask .none {
+  display: none;
 }
 body .taskBox .line {
   border-bottom: 1px solid #085f63;

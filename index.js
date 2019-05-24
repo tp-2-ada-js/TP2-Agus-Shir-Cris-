@@ -30,8 +30,27 @@ var printTask = function(){
             doneTaskList.appendChild(taskItem)
           }
     })
-}
+    // debugger
+    if(taskList.children.length !== 0){
+      var hidden = document.getElementById("hidden")
+      hidden.classList.add("none") 
+    }
+    else{
+      var hidden= document.getElementById("hidden")
+      hidden.classList.remove("none") 
+    }
 
+
+    if(doneTaskList.children.length !== 0){
+      var hiddenDone = document.getElementById("hiddenDone")
+      hiddenDone.classList.add("none")
+    }
+    else{
+      var hiddenDone = document.getElementById("hiddenDone")
+      hiddenDone.classList.remove("none")
+    }
+    
+  }
 
 var sendTask = function(){
     task = document.getElementById('commentInput');
@@ -60,10 +79,12 @@ var createBtn = function(text, itemId, btnFuction){
     console.log(btn.id)
     allTask[btn.id].pending = !allTask[btn.id].pending
     printTask()
+    
   }
 
   var deleteItem = function(btn){
-    // splice elimina del array al elemento especificado por su indice.
     allTask.splice(btn.id, 1)
     printTask()
   }
+
+  
