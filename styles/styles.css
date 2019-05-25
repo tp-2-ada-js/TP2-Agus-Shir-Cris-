@@ -205,13 +205,15 @@ body .taskBox .hiddenTask .assignment {
   font-weight: bold;
   padding-left: 20px;
 }
-body .taskBox .hiddenTask .remove {
+body .taskBox .hiddenTask .assignment .check {
+  width: 50px;
+  height: 50px;
+  color: #292830;
+  background-image: url("/image/suitcase-rolling-solid (1).svg");
+}
+body .taskBox .hiddenTask .assignment .remove {
   background-color: #fff;
   background-image: url("/image/trash-alt-regular.svg");
-  color: #292830;
-}
-body .taskBox .hiddenTask .check {
-  background-image: url("/image/suitcase-rolling-solid (1).svg");
   color: #292830;
 }
 body .taskBox .hiddenTask p {

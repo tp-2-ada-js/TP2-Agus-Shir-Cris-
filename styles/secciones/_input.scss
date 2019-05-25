@@ -69,19 +69,21 @@
             color: $color-darkTitle;
             font-weight: bold;
             padding-left: 20px;
+            .check{
+                width: 50px;
+                height: 50px;
+                color: $color-darkTitle;
+                background-image: url("/image/suitcase-rolling-solid\ \(1\).svg")
+            }
+            .remove{
+                background-color: #fff;
+                background-image: url("/image/trash-alt-regular.svg");
+                color: $color-darkTitle;
+                           
+            }
+            
         }
-        .remove{
-            background-color: #fff;
-            background-image: url("/image/trash-alt-regular.svg");
-            color: $color-darkTitle;
-                       
-        }
-
-        .check{
-            background-image: url("/image/suitcase-rolling-solid\ \(1\).svg");
-            color: $color-darkTitle;
-        }
-
+        
         p{
             display: block;
             text-align: center;
