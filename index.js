@@ -69,20 +69,20 @@ var sendTask = function(){
 }
 
 var createBtn = function(className, itemId, btnFuction){
-    var btn = document.createElement('a')
-    btn.classList.add("check")
-    btn.id = itemId
-    btn.onclick = function(){ btnFuction(this) }
-    return btn
-  }
+  var btn = document.createElement('a')
+  btn.classList.add("check")
+  btn.id = itemId
+  btn.onclick = function(){ btnFuction(this) }
+  return btn
+}
 
-  var createBtnDelete = function(className, itemId, btnFuction){
-    var btn = document.createElement('a')
-    btn.classList.add("remove")
-    btn.id = itemId
-    btn.onclick = function(){ btnFuction(this) }
-    return btn
-  }
+var createBtnDelete = function(className, itemId, btnFuction){
+  var btn = document.createElement('a')
+  btn.classList.add("remove")
+  btn.id = itemId
+  btn.onclick = function(){ btnFuction(this) }
+  return btn
+}
 
   var toggleItem = function(btn){
     console.log(btn.id)
