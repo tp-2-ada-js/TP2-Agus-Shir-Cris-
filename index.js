@@ -68,7 +68,7 @@ var sendTask = function(){
     }
 }
 
-var createBtn = function(className, itemId, btnFuction){
+var createBtn = function(_className, itemId, btnFuction){
   var btn = document.createElement('a')
   btn.classList.add("check")
   btn.id = itemId
@@ -76,7 +76,7 @@ var createBtn = function(className, itemId, btnFuction){
   return btn
 }
 
-var createBtnDelete = function(className, itemId, btnFuction){
+var createBtnDelete = function(_className, itemId, btnFuction){
   var btn = document.createElement('a')
   btn.classList.add("remove")
   btn.id = itemId
