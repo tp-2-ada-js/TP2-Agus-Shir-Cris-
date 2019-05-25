@@ -25,7 +25,8 @@ time, mark, audio, video {
 $font: 'Muli', sans-serif;
 $headerFont: 'Raleway', sans-serif;
 
-$colorInput: #fff;
+$colorInput: #ece493;
+
 $colorBack: #085f63;
 $color-darkTitle: #292830;
 $color-textHeader: #103c42;
@@ -51,7 +52,7 @@ body{
     font-family: $font;
     background-image: url("../image/tags2.jpg");
     .totalContent{
-        background-color: transparentize(#ece493, 0.3);
+        background-color: transparentize($colorInput, 0.3);
         padding: 20px 0 5px 0;
     }
     

@@ -6,12 +6,18 @@ header{
     border-radius: 50px;
     justify-content: space-between;
     border: 1px solid $color-textHeader;
+    @media only screen and (max-width: 320px){
+        width: 90%;
+    }
     .leftTicket{
         width: 13%;
         height: 100%;
         border-right: 4px dotted $color-textHeader;
         float: left;
         text-align: center;
+        @media only screen and (max-width: 320px){
+            display: none;
+        }
         i{
             @include plane 
         }
@@ -27,6 +33,9 @@ header{
         display: flex;
         flex-direction: column;
         margin: 30px 10px;
+        @media only screen and (max-width: 320px){
+            width: 300px;
+        }
         h1{
             color: $color-darkTitle;
             font-size: 110px;
@@ -34,12 +43,18 @@ header{
             text-align: center;
             margin-bottom: 20px;
             font-weight: bold;
+            @media screen and (max-width: 320px){
+                font-size: 50px;
+            }
         }
         .subtitle{
             font-size: 30px;
             font-family: $headerFont; 
             line-height : 30px;
             color: $color-darkTitle;
+            @media only screen and (max-width: 320px){
+                font-size: 5px;
+            }
         }
     }
     .rightTicket{
@@ -50,6 +65,9 @@ header{
         flex-direction: column;
         text-align: center;
         border-left: 4px dotted $color-textHeader;
+        @media only screen and (max-width: 320px){
+            display: none;
+        }    
         i{
             @include plane
         }

@@ -41,12 +41,22 @@ body header {
   justify-content: space-between;
   border: 1px solid #103c42;
 }
+@media only screen and (max-width: 320px) {
+  body header {
+    width: 90%;
+  }
+}
 body header .leftTicket {
   width: 13%;
   height: 100%;
   border-right: 4px dotted #103c42;
   float: left;
   text-align: center;
+}
+@media only screen and (max-width: 320px) {
+  body header .leftTicket {
+    display: none;
+  }
 }
 body header .leftTicket i {
   color: #103c42;
@@ -68,6 +78,11 @@ body header .title {
   flex-direction: column;
   margin: 30px 10px;
 }
+@media only screen and (max-width: 320px) {
+  body header .title {
+    width: 300px;
+  }
+}
 body header .title h1 {
   color: #292830;
   font-size: 110px;
@@ -76,11 +91,21 @@ body header .title h1 {
   margin-bottom: 20px;
   font-weight: bold;
 }
+@media screen and (max-width: 320px) {
+  body header .title h1 {
+    font-size: 50px;
+  }
+}
 body header .title .subtitle {
   font-size: 30px;
   font-family: "Raleway", sans-serif;
   line-height: 30px;
   color: #292830;
+}
+@media only screen and (max-width: 320px) {
+  body header .title .subtitle {
+    font-size: 5px;
+  }
 }
 body header .rightTicket {
   width: 13%;
@@ -90,6 +115,11 @@ body header .rightTicket {
   flex-direction: column;
   text-align: center;
   border-left: 4px dotted #103c42;
+}
+@media only screen and (max-width: 320px) {
+  body header .rightTicket {
+    display: none;
+  }
 }
 body header .rightTicket i {
   color: #103c42;
@@ -111,6 +141,11 @@ body .taskBox {
   width: 50%;
   margin: 0 auto;
 }
+@media screen and (max-width: 320px) {
+  body .taskBox {
+    width: 60%;
+  }
+}
 body .taskBox .comment {
   margin: 0 auto;
   background-color: #085f63;
@@ -122,7 +157,7 @@ body .taskBox .comment input {
   width: 98%;
   height: 60px;
   margin: 0 auto;
-  color: #fff;
+  color: #ece493;
   background-color: #292830;
   font-family: "Muli", sans-serif;
   font-size: 18px;
@@ -134,7 +169,7 @@ body .taskBox .comment input {
   text-indent: 15px;
 }
 body .taskBox .comment input::placeholder {
-  color: #fff;
+  color: #ece493;
 }
 body .taskBox .comment a {
   width: 60px;
@@ -144,7 +179,7 @@ body .taskBox .comment a {
   right: 35px;
   z-index: 2;
   border-radius: 30px;
-  background: #fff;
+  background: #ece493;
   border: none;
 }
 body .taskBox .comment a i {
@@ -154,16 +189,17 @@ body .taskBox .comment a i {
 }
 body .taskBox .hiddenTask {
   padding: 25px 0;
-  margin: 0 auto;
+  margin: 10px auto;
+  border: 2px dotted #ece493;
+  border-radius: 10px;
 }
 body .taskBox .hiddenTask .assignment {
-  width: 97%;
-  margin-right: 20px;
+  width: 90%;
   background-color: #ece493;
   padding: 20px 0;
   border: 2px solid #292830;
   border-radius: 10px;
-  margin: 10px 0;
+  margin: 20px auto;
   font-size: 15px;
   color: #292830;
   font-weight: bold;

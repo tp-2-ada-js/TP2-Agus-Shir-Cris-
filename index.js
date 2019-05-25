@@ -22,15 +22,16 @@ var printTask = function(){
         var taskItem = document.createElement("li")
         taskItem.classList.add("assignment")
         taskItem.innerText = assignment.text
-        taskItem.appendChild(createBtn('toggle', index, toggleItem))
         taskItem.appendChild(createBtn('delete', index, deleteItem))
+        taskItem.appendChild(createBtn('toggle', index, toggleItem))
         if(assignment.pending){
             taskList.appendChild(taskItem)
           } else {
             doneTaskList.appendChild(taskItem)
           }
     })
-    // debugger
+        
+    
     if(taskList.children.length !== 0){
       var hidden = document.getElementById("hidden")
       hidden.classList.add("none") 
