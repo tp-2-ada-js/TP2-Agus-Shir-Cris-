@@ -22,8 +22,13 @@ var printTask = function(){
         var taskItem = document.createElement("li")
         taskItem.classList.add("assignment")
         taskItem.innerText = assignment.text
+<<<<<<< HEAD
         taskItem.appendChild(createBtn('delete', index, deleteItem))
         taskItem.appendChild(createBtn('toggle', index, toggleItem))
+=======
+        taskItem.appendChild(createBtn('toggle', index, toggleItem))
+        taskItem.appendChild(createBtnDelete('delete', index, deleteItem))
+>>>>>>> e9ac7524cdd1aab5fe0f19178d51ccd9a860e5eb
         if(assignment.pending){
             taskList.appendChild(taskItem)
           } else {
@@ -68,9 +73,17 @@ var sendTask = function(){
     }
 }
 
-var createBtn = function(text, itemId, btnFuction){
+var createBtn = function(className, itemId, btnFuction){
     var btn = document.createElement('button')
-    btn.innerText = text
+    btn.classList.add("check")
+    btn.id = itemId
+    btn.onclick = function(){ btnFuction(this) }
+    return btn
+  }
+
+  var createBtnDelete = function(className, itemId, btnFuction){
+    var btn = document.createElement('button')
+    btn.classList.add("remove")
     btn.id = itemId
     btn.onclick = function(){ btnFuction(this) }
     return btn
