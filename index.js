@@ -68,17 +68,17 @@ var sendTask = function(){
     }
 }
 
-var createBtn = function(_className, itemId, btnFuction){
+var createBtn = function(_nameElement, itemId, btnFuction){
   var btn = document.createElement('a')
-  btn.classList.add("check")
+  btn.classList.add(_nameElement)
   btn.id = itemId
   btn.onclick = function(){ btnFuction(this) }
   return btn
 }
 
-var createBtnDelete = function(_className, itemId, btnFuction){
+var createBtnDelete = function(_nameElement, itemId, btnFuction){
   var btn = document.createElement('a')
-  btn.classList.add("remove")
+  btn.classList.add(_nameElement)
   btn.id = itemId
   btn.onclick = function(){ btnFuction(this) }
   return btn

@@ -24,9 +24,7 @@ time, mark, audio, video {
 //Variables
 $font: 'Muli', sans-serif;
 $headerFont: 'Raleway', sans-serif;
-
 $colorInput: #ece493;
-
 $colorBack: #085f63;
 $color-darkTitle: #292830;
 $color-textHeader: #103c42;
@@ -42,6 +40,24 @@ $color-textHeader: #103c42;
     font-size: 60px;
     color: $color-textHeader;
     margin-top: 20px;
+}
+
+@mixin btnLi {
+    float: right;
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 25px;
+    border: 2px solid $color-darkTitle;
+    color: $color-darkTitle;
+    margin: -10px 5px 0 0;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    &:hover{
+        background-color: $color-darkTitle;
+    }
+    
 }
 
 html, body{

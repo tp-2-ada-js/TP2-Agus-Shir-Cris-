@@ -58,32 +58,6 @@
         margin: 10px auto;
         border: 2px dotted $colorInput;
         border-radius: 10px;
-        .assignment{
-            width: 90%;
-            background-color: $colorInput;
-            padding: 20px 0;
-            border: 2px solid $color-darkTitle;
-            border-radius: 10px;
-            margin: 20px auto;
-            font-size: 15px;
-            color: $color-darkTitle;
-            font-weight: bold;
-            padding-left: 20px;
-            .check{
-                width: 50px;
-                height: 50px;
-                color: $color-darkTitle;
-                background-image: url("/image/valija.png")
-            }
-            .remove{
-                background-color: #fff;
-                background-image: url("/image/trash-alt-regular.svg");
-                color: $color-darkTitle;
-                           
-            }
-            
-        }
-        
         p{
             display: block;
             text-align: center;
@@ -94,13 +68,48 @@
         }
         .none{
             display: none;
-        }  
+        }
+        ul{
+            li{
+                width: 90%;
+                background-color: $colorInput;
+                padding: 20px 0;
+                border: 2px solid $color-darkTitle;
+                border-radius: 10px;
+                margin: 20px auto;
+                font-size: 15px;
+                color: $color-darkTitle;
+                font-weight: bold;
+                padding-left: 20px;
+                .delete{
+                    @include btnLi;
+                    background-image: url("../image/trash-alt-regular.svg");
+                }
+                .toggle{
+                    @include btnLi;
+                    background-image: url("../image/suitcase-rolling-solid.svg");
+                    
+                }
+            }
+
+        }
     } 
     .line{
         border-bottom: 1px solid $colorBack;
         margin: 0 auto;
     }  
 }
+                                     
+                    
+
+                
+                    
+                
+                
+                
+            
+        
+          
           
               
         
