@@ -2,12 +2,17 @@ header{
     width: 90%;
     height: 300px;
     background-color: #7fa99b;
-    margin: 0px auto 40px auto;
+    margin: 20px auto 40px auto;
     border-radius: 50px;
     justify-content: space-between;
     border: 1px solid $color-textHeader;
+    @media screen and (max-width: 768px){
+        height: 200px;
+    }
     @media only screen and (max-width: 320px){
-        width: 90%;
+        width: 95%;
+        height: 180px;
+        margin: 20px auto;
     }
     .leftTicket{
         width: 13%;
@@ -19,10 +24,17 @@ header{
             display: none;
         }
         i{
-            @include plane 
+            @include plane;
+            @media screen and (max-width: 768px){
+                font-size: 30px;
+                margin-top: 50px;
+            } 
         }
         p{
-            @include code
+            @include code;
+            @media screen and (max-width: 768px){
+                font-size: 50px;
+            }
         }
     }
     .title{
@@ -33,18 +45,30 @@ header{
         display: flex;
         flex-direction: column;
         margin: 30px 10px;
+        @media screen and (max-width: 768px){
+            margin: 10px 5px;
+        }
         @media only screen and (max-width: 320px){
             width: 300px;
+            height: 150px;
+            line-height: 60px;
+            margin: 10px auto 5px auto;
         }
         h1{
             color: $color-darkTitle;
             font-size: 110px;
             font-family: $headerFont;
             text-align: center;
-            margin-bottom: 20px;
+            margin: 0 auto 20px auto;
             font-weight: bold;
+            @media screen and (max-width: 768px){
+                font-size: 65px;
+                line-height: 60px;
+                margin-bottom: 10px;
+            }
             @media screen and (max-width: 320px){
-                font-size: 50px;
+                font-size: 30px;
+                margin-bottom: 5px;
             }
         }
         .subtitle{
@@ -52,8 +76,11 @@ header{
             font-family: $headerFont; 
             line-height : 30px;
             color: $color-darkTitle;
+            @media screen and (max-width: 768px){
+                font-size: 18px;
+            }
             @media only screen and (max-width: 320px){
-                font-size: 5px;
+                font-size: 20px;
             }
         }
     }
@@ -69,11 +96,20 @@ header{
             display: none;
         }    
         i{
-            @include plane
+            @include plane;
+            @media screen and (max-width: 768px){
+                font-size: 30px;
+                margin-top: 50px;
+            } 
         }
         p{
-            @include code
+            @include code;
+            @media screen and (max-width: 768px){
+                font-size: 50px;
+            }
         }
     }
 }    
+            
+                
     

@@ -54,6 +54,7 @@ var printTask = function(){
   }
 
 var sendTask = function(){
+    event.preventDefault();
     task = document.getElementById('commentInput');
     newTask = task.value;
 
