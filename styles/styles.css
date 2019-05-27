@@ -26,24 +26,39 @@ html, body {
 
 body {
   font-family: "Muli", sans-serif;
-  background-image: url("../image/tags2.jpg");
+  background-image: url("../image/tagsFondo.jpg");
+  background-repeat: repeat;
+  width: 100%;
 }
-body .totalContent {
-  background-color: rgba(236, 228, 147, 0.7);
-  padding: 20px 0 5px 0;
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  body {
+    width: 100%;
+  }
 }
 body header {
   width: 90%;
   height: 300px;
   background-color: #7fa99b;
-  margin: 0px auto 40px auto;
+  margin: 20px auto 40px auto;
   border-radius: 50px;
   justify-content: space-between;
   border: 1px solid #103c42;
 }
+@media screen and (max-width: 768px) {
+  body header {
+    height: 200px;
+  }
+}
 @media only screen and (max-width: 320px) {
   body header {
-    width: 90%;
+    width: 95%;
+    height: 180px;
+    margin: 20px auto;
   }
 }
 body header .leftTicket {
@@ -63,11 +78,22 @@ body header .leftTicket i {
   font-size: 50px;
   margin-top: 80px;
 }
+@media screen and (max-width: 768px) {
+  body header .leftTicket i {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+}
 body header .leftTicket p {
   font-family: "Fjalla One", sans-serif;
   font-size: 60px;
   color: #103c42;
   margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  body header .leftTicket p {
+    font-size: 50px;
+  }
 }
 body header .title {
   width: 70%;
@@ -78,9 +104,17 @@ body header .title {
   flex-direction: column;
   margin: 30px 10px;
 }
+@media screen and (max-width: 768px) {
+  body header .title {
+    margin: 10px 5px;
+  }
+}
 @media only screen and (max-width: 320px) {
   body header .title {
     width: 300px;
+    height: 150px;
+    line-height: 60px;
+    margin: 10px auto 5px auto;
   }
 }
 body header .title h1 {
@@ -88,12 +122,20 @@ body header .title h1 {
   font-size: 110px;
   font-family: "Raleway", sans-serif;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
   font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  body header .title h1 {
+    font-size: 65px;
+    line-height: 60px;
+    margin-bottom: 10px;
+  }
 }
 @media screen and (max-width: 320px) {
   body header .title h1 {
-    font-size: 50px;
+    font-size: 30px;
+    margin-bottom: 5px;
   }
 }
 body header .title .subtitle {
@@ -102,9 +144,14 @@ body header .title .subtitle {
   line-height: 30px;
   color: #292830;
 }
+@media screen and (max-width: 768px) {
+  body header .title .subtitle {
+    font-size: 18px;
+  }
+}
 @media only screen and (max-width: 320px) {
   body header .title .subtitle {
-    font-size: 5px;
+    font-size: 20px;
   }
 }
 body header .rightTicket {
@@ -126,11 +173,22 @@ body header .rightTicket i {
   font-size: 50px;
   margin-top: 80px;
 }
+@media screen and (max-width: 768px) {
+  body header .rightTicket i {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+}
 body header .rightTicket p {
   font-family: "Fjalla One", sans-serif;
   font-size: 60px;
   color: #103c42;
   margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  body header .rightTicket p {
+    font-size: 50px;
+  }
 }
 body .taskBox {
   border: solid 2px #085f63;
@@ -141,9 +199,14 @@ body .taskBox {
   width: 50%;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  body .taskBox {
+    width: 75%;
+  }
+}
 @media screen and (max-width: 320px) {
   body .taskBox {
-    width: 60%;
+    width: 75%;
   }
 }
 body .taskBox .comment {
@@ -171,6 +234,18 @@ body .taskBox .comment input {
 body .taskBox .comment input::placeholder {
   color: #ece493;
 }
+@media only screen and (max-width: 320px) {
+  body .taskBox .comment input::placeholder {
+    font-size: 12px;
+    padding-left: -5px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  body .taskBox .comment input {
+    height: 40px;
+    font-size: 15px;
+  }
+}
 body .taskBox .comment a {
   width: 60px;
   height: 60px;
@@ -182,13 +257,26 @@ body .taskBox .comment a {
   background: #ece493;
   border: none;
 }
+@media only screen and (max-width: 320px) {
+  body .taskBox .comment a {
+    width: 40px;
+    height: 40px;
+    right: 30px;
+  }
+}
 body .taskBox .comment a i {
   color: #292830;
   font-size: 25px;
   margin: 19px;
 }
+@media only screen and (max-width: 320px) {
+  body .taskBox .comment a i {
+    font-size: 15px;
+    margin: 13px;
+  }
+}
 body .taskBox .hiddenTask {
-  padding: 25px 0;
+  padding: 10px 0;
   margin: 10px auto;
   border: 2px dotted #ece493;
   border-radius: 10px;
@@ -215,6 +303,11 @@ body .taskBox .hiddenTask ul li {
   font-weight: bold;
   padding-left: 20px;
 }
+@media only screen and (max-width: 320px) {
+  body .taskBox .hiddenTask ul li {
+    width: 80%;
+  }
+}
 body .taskBox .hiddenTask ul li .delete {
   float: right;
   width: 40px;
@@ -230,7 +323,13 @@ body .taskBox .hiddenTask ul li .delete {
   background-image: url("../image/trash-alt-regular.svg");
 }
 body .taskBox .hiddenTask ul li .delete:hover {
-  background-color: #292830;
+  background-color: #085f63;
+}
+@media only screen and (max-width: 320px) {
+  body .taskBox .hiddenTask ul li .delete {
+    width: 30px;
+    height: 30px;
+  }
 }
 body .taskBox .hiddenTask ul li .toggle {
   float: right;
@@ -247,11 +346,29 @@ body .taskBox .hiddenTask ul li .toggle {
   background-image: url("../image/suitcase-rolling-solid.svg");
 }
 body .taskBox .hiddenTask ul li .toggle:hover {
-  background-color: #292830;
+  background-color: #085f63;
+}
+@media only screen and (max-width: 320px) {
+  body .taskBox .hiddenTask ul li .toggle {
+    width: 30px;
+    height: 30px;
+  }
 }
 body .taskBox .line {
   border-bottom: 1px solid #085f63;
   margin: 0 auto;
+}
+body .taskBox #doneTaskList .toggle {
+  background-color: #085f63;
+}
+body .taskBox #doneTaskList .toggle:hover {
+  background-color: #ece493;
+}
+body .taskBox #doneTaskList .delete {
+  background-color: #085f63;
+}
+body .taskBox #doneTaskList .delete:hover {
+  background-color: #ece493;
 }
 body footer {
   width: 70%;
@@ -261,6 +378,19 @@ body footer {
   padding: 15px 0 20px 0;
   background-color: #7fa99b;
 }
+@media only screen and (max-width: 768px) {
+  body footer {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+@media only screen and (max-width: 320px) {
+  body footer {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 15px 0 10px 0;
+  }
+}
 body footer ul {
   display: flex;
   justify-content: space-around;
@@ -268,22 +398,27 @@ body footer ul {
   padding-bottom: 20px;
   border-bottom: 2px dotted #103c42;
 }
-body footer ul li {
+body footer li {
   margin: 0 auto;
 }
-body footer ul li a {
+body footer li a {
   text-decoration: none;
 }
-body footer ul li a .logo {
+body footer li a .logo {
   width: 40px;
   line-height: 60px;
   padding: 2px;
 }
-body footer ul li a p {
+body footer li a p {
   font-family: "Raleway", sans-serif;
   color: #292830;
   font-size: 10px;
   font-weight: bold;
+}
+@media only screen and (max-width: 320px) {
+  body footer li a p {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

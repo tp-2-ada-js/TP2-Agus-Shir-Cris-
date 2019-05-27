@@ -5,12 +5,24 @@ footer {
     border-radius: 10px;
     padding: 15px 0 20px 0;
     background-color: #7fa99b;
+    @media only screen and (max-width: 768px){
+        width: 90%;
+        margin: 20px auto;
+        
+    }
+    @media only screen and (max-width: 320px){
+        width: 90%;
+        margin-bottom: 10px;
+        padding: 15px 0 10px 0;
+    }
     ul{
         display: flex;
         justify-content: space-around;
         margin: 0 30px;
         padding-bottom: 20px;
         border-bottom: 2px dotted $color-textHeader;
+        
+        }
         li{
             margin: 0 auto;
             a{
@@ -25,16 +37,20 @@ footer {
                     color: $color-darkTitle;
                     font-size: 10px;
                     font-weight: bold;
+                    @media only screen and (max-width: 320px){
+                        display: none;
+                    }
                 }
-                
             }
-            
         }
-        
     }
+
     
+        
+            
+           
     
-}
+
             
                     
                   

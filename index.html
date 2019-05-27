@@ -12,55 +12,53 @@
     <title>Boarding Pass</title>
 </head>
 <body onload="printTask()">
-    <div class="totalContent">
-        <header>
-            <div class="leftTicket">
-                <i class="fas fa-plane-departure"></i>
-                <p>SAC</p>
-            </div>
-            <div class="title">
-                <h1>BOARDING PASS</h1>
-                <p class="subtitle">Lugares del mundo <br> que hay que conocer antes de morir</p>
-            </div>
-            <div class="rightTicket">
-                <i class="fas fa-plane-arrival"></i>
-                <p>ADA</p>
-            </div>
-
-        </header>
-        <section class="taskBox">
-            <div class="comment"> 
-                <input id="commentInput" type="text" value= "" placeholder="Mi proximo viaje sera a..."
-                onkeypress="enterKeyPress(event)">
-                <a href="#" onclick="sendTask()"><i class="fas fa-plus"></i> </a>
-            </div>
-            <div class="hiddenTask">
-                <p id="hidden">¡No hay destinos pendientes!</p>
-                <ul id="taskList"></ul>
-            </div>
-            <div class="line"></div>
-            <div class="hiddenTask">
-                <p id="hiddenDone" >Todavia no visitaste ningun lugar</p>
-                <ul id="doneTaskList"></ul>
-            </div>
-        </section>
-            <footer>
-                <ul class="footer">
-                    <li><a href="https://www.turismocity.com.ar/"><img class="logo" src="image/turismocity.png"><p>TURISMO CITY</p></a></li>
-                    <li><a href="https://www.trivago.com/es"><img class="logo" src="image/trivago.png"><P>TRIVAGO</P></a></li>
-                    <li><a href="https://www.despegar.com"><img class="logo" src="image/Despegar.png"><P>DESPEGAR.COM</P></a></li>
-                    <li><a href="https://es.airbnb.com/"><img class="logo" src="image/airbnb2.png"><P>AIRBNB</P></a></li>
-                    <li><a href="https://www.booking.com/"><img class="logo" src="image/booking.png"><P>BOOKING</P></a></li>
-
-                </ul>
-                
-                   
-            </footer>
-    </div>
-    
+    <header>
+        <div class="leftTicket">
+            <i class="fas fa-plane-departure"></i>
+            <p>SAC</p>
+        </div>
+        <div class="title">
+            <h1>BOARDING PASS</h1>
+            <p class="subtitle">Lugares del mundo <br> que hay que conocer antes de morir</p>
+        </div>
+        <div class="rightTicket">
+            <i class="fas fa-plane-arrival"></i>
+            <p>ADA</p>
+        </div>
+    </header>
+    <section class="taskBox">
+        <div class="comment"> 
+            <input id="commentInput" type="text" value= "" placeholder="Mi proximo viaje sera a..."
+            onkeypress="enterKeyPress(event)">
+            <a href="#" onclick="sendTask()"><i class="fas fa-plus"></i> </a>
+        </div>
+        <div class="hiddenTask">
+            <p id="hidden">¡No hay destinos pendientes!</p>
+            <ul id="taskList"></ul>
+        </div>
+        <div class="line"></div>
+        <div class="hiddenTask">
+            <p id="hiddenDone" >Todavia no visitaste ningun lugar</p>
+            <ul id="doneTaskList"></ul>
+        </div>
+    </section>
+    <footer>
+        <ul class="footer">
+            <li><a href="https://www.turismocity.com.ar/"><img class="logo" src="image/turismocity.png"><p>TURISMO CITY</p></a></li>
+            <li><a href="https://www.trivago.com/es"><img class="logo" src="image/trivago.png"><P>TRIVAGO</P></a></li>
+            <li><a href="https://www.despegar.com"><img class="logo" src="image/Despegar.png"><P>DESPEGAR.COM</P></a></li>
+            <li><a href="https://es.airbnb.com/"><img class="logo" src="image/airbnb2.png"><P>AIRBNB</P></a></li>
+            <li><a href="https://www.booking.com/"><img class="logo" src="image/booking.png"><P>BOOKING</P></a></li>
+        </ul>
+    </footer>
 </body>
 </html>
+    
   
+    
+  
+           
+                   
                        
         
           

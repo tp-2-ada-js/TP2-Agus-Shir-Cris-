@@ -55,7 +55,14 @@ $color-textHeader: #103c42;
     background-repeat: no-repeat;
     background-position: center;
     &:hover{
-        background-color: $color-darkTitle;
+        background-color: $colorBack;
+    }
+}
+
+@mixin secondListLi {
+    background-color: $colorBack;
+    &:hover{
+        background-color: $colorInput;
     }
     
 }
@@ -66,16 +73,23 @@ html, body{
 
 body{
     font-family: $font;
-    background-image: url("../image/tags2.jpg");
-    .totalContent{
-        background-color: transparentize($colorInput, 0.3);
-        padding: 20px 0 5px 0;
-    }
+    background-image: url("../image/tagsFondo.jpg");
+    background-repeat: repeat;
+    width: 100%;
+    
+    @media only screen and (max-width: 768px){
+        width: 100%;
+    } 
+    @media only screen and (max-width: 320px){
+        width: 100%;
+    }   
+      
     
     @import "secciones/header";
     @import "secciones/input";
     @import "secciones/footer";
 }
+            
             
 
         
