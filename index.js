@@ -1,3 +1,4 @@
+// la variables podrían haber sido creadas todas en una sola linea
 var task
 var newTask
 var taskList
@@ -31,7 +32,7 @@ var printTask = function(){
           }
     })
         
-    
+    // esta validación se repite igual para las dos listas, podria ser una función aparte
     if(taskList.children.length !== 0){
       var hidden = document.getElementById("hidden")
       hidden.classList.add("none") 
@@ -64,6 +65,7 @@ var sendTask = function(){
         text:newTask,
         pending:true
     })
+    // cuidado con dejar console logs en codigo final
     console.log(allTask)
     printTask()
     }
@@ -77,6 +79,7 @@ var createBtn = function(_nameElement, itemId, btnFuction){
   return btn
 }
 
+//esta funcion no está siendo usada nunca y es un clon de la anterior, deberia ser borrada
 var createBtnDelete = function(_nameElement, itemId, btnFuction){
   var btn = document.createElement('a')
   btn.classList.add(_nameElement)
@@ -86,6 +89,7 @@ var createBtnDelete = function(_nameElement, itemId, btnFuction){
 }
 
   var toggleItem = function(btn){
+    // cuidado con dejar console logs en codigo final
     console.log(btn.id)
     allTask[btn.id].pending = !allTask[btn.id].pending
     printTask()
